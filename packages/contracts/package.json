@@ -1,0 +1,32 @@
+{
+  "name": "@0xcuonghx/nft-auth-contracts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/typechain-types/index.js",
+  "types": "dist/typechain-types/index.d.ts",
+  "scripts": {
+    "clean": "hardhat clean && rimraf dist cache coverage coverage.json",
+    "test": "hardhat test",
+    "build": "npm run clean & npm run compile && tsc"
+  },
+  "keywords": [
+    "nft-auth",
+    "contracts"
+  ],
+  "author": "0xcuonghx",
+  "license": "ISC",
+  "files": [
+    "/contracts/**/*.sol",
+    "!/contracts/mocks/**/*",
+    "dist",
+    "artifacts"
+  ],
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.22.2",
+    "rimraf": "^5.0.5"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.2"
+  }
+}
