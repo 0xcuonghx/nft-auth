@@ -18,7 +18,7 @@ export interface JwtPayload {
 
 export interface NftAuthConfig {
   jwt: {
-    expiresIn: string;
+    expiresIn: string | number;
     secretKey: string;
   };
   contractAddress: string;
@@ -91,5 +91,9 @@ export default class NftAuth {
 
   private get _jwtSecretKey(): string {
     return this._config.jwt.secretKey;
+  }
+
+  get contract(): AuthNft {
+    return this._contract;
   }
 }
