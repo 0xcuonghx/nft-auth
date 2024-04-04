@@ -7,7 +7,7 @@
  * @link https://trpc.io/docs/v11/router
  * @link https://trpc.io/docs/v11/procedures
  */
-import { initTRPC } from '@trpc/server';
+import { initTRPC } from "@trpc/server";
 
 const t = initTRPC.create();
 
