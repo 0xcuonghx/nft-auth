@@ -62,7 +62,11 @@ export default class NftAuth {
       throw new Error('Invalid signature');
     }
 
-    const isRegistered = await this._contract.isRegistered(signerAddress);
+    // semantic error TS2339: Property 'isRegistered' does not exist on type 'AuthNft'
+    // https://github.com/jaredpalmer/tsdx/issues/1172
+    const isRegistered = await (<any>this._contract).isRegistered(
+      signerAddress
+    );
 
     if (!isRegistered) {
       throw new Error('Unauthorized');

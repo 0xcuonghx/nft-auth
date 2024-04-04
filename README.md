@@ -2,7 +2,7 @@
 
 - Provide method to authorize user using nft + jwt
 
-## F&Q
+## How it work
 
 1. How to address user?
 
@@ -13,6 +13,8 @@
 2. How to check user authorize?
 
 - we authorize by checking user has already have a nft for first time and generate jwt token for later use
+
+![architecture](./media/architecture.png)
 
 ## Install
 

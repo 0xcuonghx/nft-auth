@@ -1,6 +1,6 @@
 {
   "name": "@cuonghx.gu-tech/nft-auth-contracts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "typechain-types/index.js",
   "types": "typechain-types/index.d.ts",

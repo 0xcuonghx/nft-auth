@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "1.0.0",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -53,7 +53,7 @@
     "typescript": "^5.4.3"
   },
   "dependencies": {
-    "@cuonghx.gu-tech/nft-auth-contracts": "*",
+    "@cuonghx.gu-tech/nft-auth-contracts": "^1.0.1",
     "ethers": "^6.11.1",
     "jsonwebtoken": "^9.0.2"
   }
